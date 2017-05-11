@@ -16,7 +16,8 @@ The nginx:
         endscript
 }
 
-The tomcat using jsvc, refer to https://wiki.apache.org/tomcat/FAQ/Logging#Q10 
+The tomcat using jsvc, 
+refer to https://wiki.apache.org/tomcat/FAQ/Logging#Q10 and https://plonexp.leocorn.com/leocornus/leocornus.buildout.cfgrepo/xps35
 ( If you are using jsvc 1.0.4 or later (from Apache Commons Daemon project) to launch Tomcat, you can send SIGUSR1 signal to jsvc to get it to re-open its log files (Jira Ticket). You can couple this with 'logrotate' or your favorite log-rotation utility (including good-old 'mv') to re-name catalina.out at intervals and then get jsvc to re-open the original (catalina.out) file and continue writing to it. )
 /path/to/tomcat/catalina/log.files {
     postscript
